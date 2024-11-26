@@ -1,16 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import News from './components/News'
-
-const App = () => {
-  return (
-    <div>
-     <Navbar />
-     <Home/>
-     <News/>
-=======
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -22,7 +9,6 @@ function App() {
       <div id="home">
         <Home />
       </div>
->>>>>>> Stashed changes
     </div>
   );
 }
