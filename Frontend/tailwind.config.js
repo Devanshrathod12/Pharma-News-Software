@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'pharma': "url('./assets/phrma.png')", 
+      },
+    },
   },
   plugins: [],
-}
+};
