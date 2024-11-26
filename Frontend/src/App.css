@@ -9,7 +9,7 @@
     width: 0;
   }
   to {
-    width: 110%;
+    width: 100%;
   }
 }
 
@@ -25,7 +25,37 @@
   white-space: nowrap; /* Prevent text from wrapping */
   width: 0; /* Start with a width of 0 */
   border-right: 4px solid white; /* Create a cursor effect */
-  animation: typing 5s steps(50) 1s forwards, blink 0.5s step-end infinite; /* Typing effect + cursor blink */
+  animation: typing 3s steps(50) 1s forwards, blink 0.5s step-end infinite; /* Typing effect + cursor blink */
   font-family: Arial, sans-serif;
   line-height: 1; /* Fix the vertical alignment issue */
 }
+
+/* Additional styling for the News page */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* App.css */
+
+/* Background image for the Home page only */
